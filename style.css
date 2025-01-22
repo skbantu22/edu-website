@@ -88,6 +88,110 @@ height: 380px;
 
 
 
+/* Card-Section */
+
+.cards-container{
+
+  display: flex;
+}
+
+
+
+
+/* gird-selection-unit */
+.grid-container{
+
+  display: flex;
+  gap: 15px;
+
+}
+
+.div-big-image{
+  width: 540px;
+  height: 337px;
+  background-color: white;
+
+}
+.div-small-image{
+
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+.card-section-1{
+
+ background-color: white;
+}
+
+.card-1-img{
+  width: 340px;
+  height: 237px;
+  
+
+}
+
+
+.grid-container{
+/* Article */
+
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+.card-section-container{
+
+  background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+
+}
+.card-section-1{
+
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer-container{
+  display: flex;
+ background: rgb(1, 172, 253);
+
+}
+.footer-logo-and-text-container{
+display: flex;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -113,6 +217,43 @@ padding: 12px 16px;
 
   display: none;
 }
+
+
+/* hero-section */
+
+.hero-container{
+
+
+  flex-direction: column-reverse;
+}
+
+.cards-container{
+
+  flex-direction: column;
+}
+
+/* CARD-SECTION */
+.grid-container{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-row:  repeat(3,1fr)  ;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer-container{
+flex-direction: column;
+}
+
+
 
 
   }

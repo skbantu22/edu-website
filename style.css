@@ -14,8 +14,15 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+/* *********
 
+********* */
+
+.hide{
+  display: none;
+}
 /* Navigation */
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -48,7 +55,6 @@ body {
 
 .nav-mid ul li a {
   text-decoration: none;
-  color: black;
   font-weight: 600;
 }
 
@@ -60,9 +66,47 @@ body {
   font-size: 30px;
 }
 
+.home{
+  
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  
+  color: orange;
+}
+.about{
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgb(1, 172, 253);
+}
+
+
+.facility{
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+color: rgb(5, 212, 223);
+
+}
+
+.admission{
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+color: rgb(93, 88, 239);
+}
 /* Buttons */
 button {
-  background-color: #3cd8e8;
+  border-radius: 12px;
+
+/* Orange */
+background: rgb(254, 163, 1);
   color: white;
   border: none;
   border-radius: 20px;
@@ -79,13 +123,28 @@ button:hover {
 .hero-container {
   display: flex;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  gap: 200px;
   padding: 0 100px;
 }
 
+.hero-text{
+width: 600px;
+}
+
+.hero-btn-2{
+margin-top: 10px;
+  border-radius: 2px;
+
+/* Black */
+background: rgb(17, 17, 17);
+}
 .hero-inside-text {
-  font-size: 36px;
-  font-weight: 700;
+  font-family: Quicksand;
+font-size: 56px;
+font-weight: 700;
+line-height: 61px;
+margin-bottom: 20px;
 }
 
 .hero-image {
@@ -93,7 +152,10 @@ button:hover {
   max-width: 350px;
   height: auto;
 }
+.towards{
 
+  color: rgb(1, 172, 253);
+}
 /* Card Section */
 .cards-container {
   display: flex;
@@ -116,7 +178,42 @@ button:hover {
   max-width: 200px;
   margin-bottom: 20px;
 }
+.Empowering{
 
+  color: rgb(254, 163, 1);
+}
+
+
+.standard-curicolamn{
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 57.5px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+.many-btn{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.story-section{
+display: flex;
+font-family: Quicksand;
+font-size: 30px;
+font-weight: 700;
+align-items: center;
+justify-content: center;
+margin-top: 80px;
+margin-bottom: 80px;
+}
 /* Grid Section */
 .grid-section {
   background: linear-gradient(1deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
@@ -202,6 +299,11 @@ height: 630.52px;
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+ .btn-contact{
+
+  display: none;
+ }
+
   .nav-container {
     padding: 20px;
   }
@@ -215,7 +317,7 @@ height: 630.52px;
   }
 
   .hero-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 
